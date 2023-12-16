@@ -1,0 +1,92 @@
+
+/*element selector styling the background color, text color, and margin of the body*/
+body {
+    background-color: rgb(74, 105, 137);
+    color: rgb(17, 78, 113);
+    margin: 0%;
+}
+/*element selector styling the font size of the h1 headers*/
+h1 {
+    font-size: 35px;
+}
+/*element selector styling the font size of the h5 headers*/
+h5 {
+    font-size: 20px;
+}
+/*element selector targeting both the h1s and h5s, styling the font family and color, and centering the text*/
+h1, h5 {
+    text-align: center;
+    color: rgb(17, 78, 113);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+/*element selector styling the paragraphs to center the text while keeping it aligned to the left. When I tried using text-align,
+each line was centered*/
+p {
+    display: flex;
+    justify-content: center;
+}
+/*styles the font size and family of the paragraph, ordered list, and unorderlered list elements*/
+p, ol, ul {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*element selector styling both lists to center the text while keeping it aligned to the left. When I used flex, the bullet 
+points and numbers stayed in the left side of the page while the list items were in the center, using grid fixed that*/
+ol, ul {
+    display: grid;
+    justify-content: center;
+}
+/*styles all of the links, changing their font family and font color*/
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+}
+/*this specificies the color I want the links to be when they are being hovered over*/
+a:hover {
+    color: rgb(74, 105, 137);
+}
+/*class selector styling the div that holds all of images, has no bottom border because the top border of the text div serves this purpose*/
+.image-div {
+    background-color: rgb(74, 105, 137);
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: #32a87b;
+    padding: 10px;
+}
+/*class selector styling the border around all three images*/
+.first-img, .sec-img, .third-img {
+    border: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+/*class selector styling the div that holds all of the text*/
+.text-div {
+    background-color: aqua;
+    border: 5px;
+    border-style: solid;
+    border-color: #32a87b;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+/*element selector styles the nav bar, I only wanted a top border because the border of the text div serves as the border 
+of the sides and bottom of the nav as well*/
+nav {
+    background-color: rgb(17, 78, 113);
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 5px;
+    border-style: solid;
+    border-color: #32a87b;
+    margin: 0;
+}

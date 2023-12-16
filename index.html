@@ -1,0 +1,84 @@
+<! -- boilerplate code needed to start any html file -- >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <! -- name that appears in tab -- >
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <! -- I wanted everything to be centered on the page so the entirety of the page's content is within center tags -- >
+   
+    <! -- main header -- >
+    
+    <h1 class="h1">Animals of the Alcorn Household</h1>
+    
+        <! -- image tags, height with pixel value added to adjust size, src contains file name of photo 
+       I wanted spaces in between the photos so I googled how to do that, ensp is for double space -- >
+    <div class="div-img">
+        <img class="third-img" src="3petstwo.jpg" alt="petsonbed">
+        <img class="first-img" src="3pets.jpg" alt="animalsinkitchen">
+        <img class="sec-img" src="IMG_0332.jpeg" alt="onbed2"> 
+    </div>
+
+    <! -- subheader -- > 
+    <h2>An Introductory Guide to my Pets</h2>
+    <! -- everything inside the table tags is part of the table -- >
+   <table>
+        <! -- everything in tr tag is displayed in the row of the table -- >
+        <tr id="titlerow">
+            <! -- table headers -- >
+            <th>Name</th>
+            <th>Breed</th>
+            <th>Age</th>
+        </tr>
+        <! -- this is the second row -- >
+        <tr>
+            <! -- each tabe data tag contains what is displayed for each "column" 
+            within that row. -- >
+            <td>Ponyboy</td>
+            <td>Domestic Shorthair</td>
+            <td>11 years</td>
+        </tr>
+        <! -- this is the third row -- >
+        <tr>
+            <td>Silas</td>
+            <td>BullyXBorder Collie</td>
+            <td>6.5 years</td>
+        </tr>
+        <! -- this is the fourth row -- >
+        <tr>
+            <td>Agnes</td>
+            <td>Australian Cattle Dog</td>
+            <td>6 years</td>
+        </tr>
+    <! -- closing table tag -- >    
+    </table>
+
+    <! -- these are the links to the other pages. anchor tags, the href value
+    contains the file name of the page. relative path. each one followed by a double space -- >
+    <nav>
+        <a href="Ponyboy.html">Click here to learn more about Ponyboy!</a> 
+        <a href="Silas.html">Click here to learn more about Silas!</a>  
+        <a href="Agnes.html">Click here to learn more about Agnes!</a> 
+    </nav>
+    <! -- this is just more text instructing the user what the form is for -- >
+    <p>Once you've gotten to know each one, head back to the home page and vote for you favorite.</p>
+    
+    <! -- This the form to vote for your favorite. Within the form tags are
+    the elements of the form. text box for user's first name, three radio 
+    buttons one for each pet's name, and the submit button, each one followed 
+    by a line break -- >
+    <form>
+        <input type="text" name="firstname" placeholder="First Name"> <br><br>
+        <input type="radio" name="favpet" value="Ponyboy"> Ponyboy <br>
+        <input type="radio" name="favpet" value="Silas"> Silas <br>
+        <input type="radio" name="favpet" value="Agnes"> Agnes <br><br>
+        <input id="submit-button" type="Submit" value="Submit"><br>
+    </form>
+ 
+ <! -- closing center tag above, closing body and html tags below -- >
+</body>
+</html>

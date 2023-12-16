@@ -1,0 +1,175 @@
+/*element selector styling background color and margin of body*/
+body {
+    background-color: rgb(17, 78, 113);
+    margin: 0%;
+}
+/*element selector styling h1, including font family and color, text shadow, padding, and border*/
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aqua;
+    text-shadow: 2px 2px 2px rgb(17, 78, 113);
+    background-color: rgb(74, 105, 137);
+    padding: 8px;
+    border: 5px;
+    border-style: inset;
+    border-color: aquamarine;
+    margin: 2px;
+}
+/* I had to used display grid to make the table maintain it's appearance on smaller screens, and border-spacing to space out the
+td elements the way I wanted. Also styles the background and text color, teh padding, border, and margin, and centers it on the page*/
+table {
+    display: grid;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: aqua;
+    background-color: rgb(74, 105, 137);
+    border: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: aquamarine;
+    padding: 10px;
+    padding-top: 25px;
+    border-spacing: 20px;
+}
+/*styles nav bar, used display flex and justify content: space-evenly to place the links how I want them within nav*/
+nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border: 2px;
+    border-style: dashed;
+    border-color: aqua;
+    padding: 12px;
+}
+/*class selector that styles the div containing the images. It has padding, aqua colored dotted border, and margin*/
+.div-img {
+    margin: 15px;
+    padding: 15px;
+    border: 7px; 
+    border-style: dotted;
+    border-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*class selector to style the size of the images and add a border*/
+.first-img {
+    width: 300px;
+    height: 300px;
+    border: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+/*class selector to style the size of the images and add a border*/
+.sec-img {
+    width: 300px;
+    border: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: aquamarine;   
+}
+/*class selector to style the size of the images and add a border*/
+.third-img {
+    width: 300px;
+    height: 300px;
+    border: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+/*element selector styling the font family and color, and centering the text, also getting rid of the padding and margin*/
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    padding: 0px;
+    margin: 0px;
+}
+/*id selector styling only the table header, making the text slightly larger than that of the rest of the table and underlining it*/
+#titlerow {
+    font-size: 18px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-around;
+}
+/*centers the text of the table data items*/
+tr, td {
+    text-align: center;
+}
+/*centers the text of the table headers*/
+tr, th {
+    text-align: center;
+}
+/*styles all of the links, changing their font family and font color*/
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+}
+/*this specificies the color I want the links to be when they are being hovered over*/
+a:hover {
+    color: #32a87b;
+}
+/*element selector styling the paragraph to change the font family, size, and color, and center the text*/
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: aqua;
+    text-align: center;
+}
+/*added margin to the form, centered the text within the form, and changed the font family, size and color*/
+form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aquamarine;
+}
+/*id selector styling the submit button, adding a border and changing the color of the text and background*/
+#submit-button {
+    background-color: rgb(74, 105, 137);
+    color: aquamarine;
+    border: 1px;
+    border-style: solid;
+    border-color: aqua;
+}
+/*id selector to style the submit button while it is in the hover state*/
+#submit-button:hover {
+    background-color: rgb(74, 105, 137);
+    color:  #32a87b;
+
+}
+
+/*was trying to use media query to change the way the links looked on small screens but wasn't able to 
+figure it out in time
+
+@media (max-width: 700px) {
+
+    nav {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 25px;
+        margin-bottom: 12px;
+        border: 2px;
+        border-style: dashed;
+        border-color: aqua;
+        padding: 12px;
+    
+    }
+    }*/
+    
